@@ -2,13 +2,220 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Responsive Redesign</title>
     <link rel="stylesheet" href="index.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
+
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <div class="header">
+      <h1> Responsive Redesign - Central Meat Market </h1>
+    </div>
+
+    <div class="header-text">
+      <p>
+        For this project, I practiced responsive design. I redesigned a website for
+        a local butcher shop, using lo-fi and hi-fi prototypes to develop my redesign.
+        I learned a lot more about how to use html, CSS, and a bit of Javascript.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="subheading">
+      <h3> Part 1: Identifying Usability Problems </h3>
+    </div>
+
+    <div class="part">
+      <div>
+        I chose the website for <a href="centralmeatmarket.com">Central Meat Market</a> to redesign.
+      </div>
+
+      <div class="img">
+        <img src="website-o.png" width="600" height="297">
+      </div>
+
+      <p>
+        I immediately noticed a number of usability problems. I also used WebAIM WAVE
+        and a screen reader to test for accessibility issues.
+      </p>
+      <table style="width:80%">
+        <tr>
+          <th class="th-e">Efficiency</th>
+          <th class="th-l">Learnability</th>
+          <th class="th-m">Memorability</th>
+          <th>Accessibility</th>
+        </tr>
+        <tr>
+          <td>1. Broken image links</td>
+          <td>1. Vague navbar titles - Butcher service vs. wholesale meat vs. products all are too similar</td>
+          <td>1. Navbar is not organized in any obvious way. </td>
+          <td>1. Low contrast between text and background colors. </td>
+        </tr>
+        <tr>
+          <td>2. Shifting colors and fonts create false hierarchies</td>
+          <td>2. Unclear matchup between navbar and body (e.g., different ordering)</td>
+          <td>2. Lack of specials tab makes it hard to locate in the future.</td>
+          <td>2. Images had random names and no alternative text, which was bad for the screen reader.</td>
+        </tr>
+        <tr>
+          <td>3. General clutter</td>
+          <td>3. Weekly specials and packages are in one subheading but link to separate pages.</td>
+          <td>3. Navbar breaks some conventions (e.g., contact is not placed first or last). </td>
+          <td>3. Empty headings and links</td>
+        </tr>
+        <tr>
+          <td>4. Repetitive links (two links leading to the same COVID notice right next to each other in different colors)</td>
+          <td>4. Only some images link.</td>
+          <td></td>
+          <td>4. No page regions</td>
+        </tr>
+        <tr>
+          <td>5. Not responsive (text does not wrap when resizing desktop screen, always three column layout) </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <hr>
+
+    <div class="subheading">
+      <h3> Part 2: Visual Redesign </h3>
+    </div>
+
+    <div class="part">
+      I then created lo-fi prototypes. They are annotated with how they address the
+      usability issues above.
+
+      <div class="img">
+        <img src="RR-Lofi-Prototypes_Page_1.png" width="1000" height="370">
+      </div>
+
+      <div class="img">
+        <img src="RR-Lofi-Prototypes_Page_2.png" width="770" height="540">
+      </div>
+
+      <div class="img">
+        <img src="RR-Lofi-Prototypes_Page_3.png" width="800" height="470">
+      </div>
+      <br>
+      I've included annotations for how certain elements help fix the usability problems.
+      <br>
+      <br>
+      <table style="width:80%">
+        <tr>
+          <th class ="th-e">Efficiency</th>
+          <th class="th-l">Learnability</th>
+          <th class="th-m">Memorability</th>
+        </tr>
+        <tr>
+          <td>1. All images work</td>
+          <td>1. Changes to clearer navbar titles</td>
+          <td>1. More organized navbar (COVID notice first) </td>
+        </tr>
+        <tr>
+          <td>2. Consistent color scheme and font sizes</td>
+          <td>2. More consistency between navbar and main parts of the body (e.g., subheading names)</td>
+          <td>2. Specials placed in navbar</td>
+        </tr>
+        <tr>
+          <td>3. Less clutter (title moved away from navbar)</td>
+          <td>3. Packages + Specials as one page clarifies heading</td>
+          <td>3. Better adherence to conventions (contact last). </td>
+        </tr>
+        <tr>
+          <td>4. Single link to COVID policies (no repeat links)</td>
+          <td>4. Images consistently don't link.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5. Responsive design (flexbox, font size management) </td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      <br>
+
+      Then, I created hi-fi prototypes in Figma.
+
+      <div class="img">
+        <img src="Desktop-Hifi.png" width="1000" height="320">
+      </div>
+      <div class="img">
+        <img src="Tablet-Hifi.png" width="800" height="470">
+      </div>
+
+      <div class="img">
+        <img src="Phone-Hifi.png" width="900" height="420">
+      </div>
+
+      I've annotated the key design elements. Note that the main container is not marked, as it contains the upper and lower frames of each prototype.
+
+      <div class="img">
+        <img src="Elements.png">
+      </div>
+
+      When screens are small, there is also the sidenav (shown in the final phone prototype).
+
+      <div class="img">
+        <img src="Sidenav elements.png" >
+      </div>
+
+      I then created a visual design style guide.
+
+      <div class="img">
+        <img src="Responsive Redesign Style Guide.png" width="800" height="550">
+      </div>
+    </div>
+
+
+
+    <hr>
+
+    <div class="subheading">
+      <h3> Part 3: Responsive Redesign </h3>
+    </div>
+
+
+    <div class="part">
+      <a href="https://responsive-redesign-site.herokuapp.com/">This is my final website.</a>
+
+      <div class="img">
+        <img src="Website-1.png" width="800" height="400">
+      </div>
+      <div class="img">
+        <img src="Website-2.png" width="800" height="400">
+      </div>
+
+      I tested it for responsiveness in multiple ways. The website handles window resizing very well,
+      since the font size changes according to multiple media queries. It was a little less
+      responsive with font resizing, mostly because of the main page-title-container; I wasn't able
+      to find a way to media query against font size settings. WebAIM WAVE only detected contrast errors
+      in the website. I worked hard to prevent contrast errors, so it was interesting that it still picked
+      up on them. This exemplifies the value of such resources.
+
+    </div>
+
+
+    <div class="subheading">
+      <h3> Final Reflections </h3>
+    </div>
+
+    <div class="part">
+      The most valuable part of this project was learning how to transfer designs from lo-fi prototypes
+      to hi-fi ones to websites. I learned that making good decisions early makes the rest of the process
+      much easier, and keeping a neat workflow is key to efficiency.
+
+    </div>
+
+    <div class="header">
+      <h1> Thank you for reading! </h1>
+    </div>
   </body>
 </html>

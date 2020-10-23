@@ -1,1 +1,63 @@
 /* Put your style information here! */
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  background: #FFFFFF;
+  margin-left: 50px;
+  margin-right:50px;
+}
+
+li {
+  margin: 0.5em;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  align-self:center;
+}
+
+.th-e {
+  color: green;
+}
+
+.th-l {
+  color: blue;
+}
+
+.th-m {
+  color: red;
+}
+
+td {
+  padding: 10px;
+}
+
+
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.subheading {
+}
+
+.part {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-self: center;
+}
